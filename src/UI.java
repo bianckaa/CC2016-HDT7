@@ -14,9 +14,9 @@ import java.util.Scanner;
 public class UI {
     /**
      * Muestra el menú principal de la interfaz de usuario y permite al usuario interactuar con las opciones disponibles.
-     *
-     * @param inventario El objeto de tipo Inventario donde se almacenan los productos.
-     */
+    *
+    * @param inventario El objeto de tipo Inventario donde se almacenan los productos.
+    */
     public static void mostrarMenu(Inventario inventario) {
         Scanner scanner = new Scanner(System.in);
         int opcion;
@@ -65,7 +65,7 @@ public class UI {
                     int criterio = scanner.nextInt();
                     scanner.nextLine();
                     if (criterio == 1) {
-                        System.out.print("Ingrese el SKU: ");
+                        System.out.print("Ingrese el SKU del producto: ");
                         String sku = scanner.nextLine();
                         Producto producto = inventario.buscarPorSKU(sku);
                         if (producto == null) {
@@ -74,8 +74,10 @@ public class UI {
                             System.out.println("\n" + producto);
                         }
                     } else if (criterio == 2) {
-                        System.out.print("Ingrese el Nombre: ");
+                        System.out.print("Ingrese el Nombre del producto (sin tildes): ");
                         String nombre = scanner.nextLine();
+
+                        nombre = nombre.toLowerCase();
                         Producto producto = inventario.buscarPorNombre(nombre);
                         if (producto == null) {
                             System.out.println("Producto no encontrado.");
@@ -96,4 +98,4 @@ public class UI {
         
         scanner.close();
     }
-}
+} 
