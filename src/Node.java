@@ -1,3 +1,12 @@
+/**
+ * Universidad del Valle de Guatemala
+ * Algoritmos y Estructuras de Datos - Seccion 31
+ * Hoja de Trabajo 7
+ * Biancka Raxón 24960
+ * 
+ * Clase: Node.java
+ * Clase que representa un nodo del árbol binario. 
+ */
 
 public class Node<K, V>{
     K key;

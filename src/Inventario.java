@@ -1,3 +1,13 @@
+/**
+ * Universidad del Valle de Guatemala
+ * Algoritmos y Estructuras de Datos - Seccion 31
+ * Hoja de Trabajo 7
+ * Biancka Raxón 24960
+ * 
+ * Clase: Inventario.java
+ * Clase que maneja la logica que deberia tener un inventario. 
+ */
+
 public class Inventario {
     BinarySearchTree<String, Producto> bstSKU = new BinarySearchTree<>();
     BinarySearchTree<String, Producto> bstNombre = new BinarySearchTree<>();

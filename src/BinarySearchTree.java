@@ -1,7 +1,16 @@
-// Referencias
-// https://cs.colby.edu/courses/S18/cs231/notes/outlines19.pdf
-// https://somoshackersdelaprogramacion.es/arboles-binarios-de-busqueda-en-java
-
+/**
+ * Universidad del Valle de Guatemala
+ * Algoritmos y Estructuras de Datos - Seccion 31
+ * Hoja de Trabajo 7
+ * Biancka Raxón 24960
+ * 
+ * Referencias
+ * https://cs.colby.edu/courses/S18/cs231/notes/outlines19.pdf
+ * https://somoshackersdelaprogramacion.es/arboles-binarios-de-busqueda-en-java
+ * 
+ * Clase: BinarySeachTree.java
+ * Clase que implementa un Arbol Binario de Busqueda generico. 
+ */
 public class BinarySearchTree <K extends Comparable<K>, V>{
     private Node<K, V> root;
 

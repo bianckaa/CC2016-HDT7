@@ -1,3 +1,14 @@
+/**
+ * Universidad del Valle de Guatemala
+ * Algoritmos y Estructuras de Datos - Seccion 31
+ * Hoja de Trabajo 7
+ * Biancka Raxón 24960
+ * 
+ * Clase: UI.java
+ * Clase encargada de recibir las interacciones del 
+ * usuario para ser procesadas. 
+ */
+
 import java.util.Scanner;
 
 public class UI {
@@ -56,11 +67,21 @@ public class UI {
                     if (criterio == 1) {
                         System.out.print("Ingrese el SKU: ");
                         String sku = scanner.nextLine();
-                        System.out.println("\n" + inventario.buscarPorSKU(sku));
+                        Producto producto = inventario.buscarPorSKU(sku);
+                        if (producto == null) {
+                            System.out.println("Producto no encontrado.");
+                        } else {
+                            System.out.println("\n" + producto);
+                        }
                     } else if (criterio == 2) {
                         System.out.print("Ingrese el Nombre: ");
                         String nombre = scanner.nextLine();
-                        System.out.println("\n" + inventario.buscarPorNombre(nombre));
+                        Producto producto = inventario.buscarPorNombre(nombre);
+                        if (producto == null) {
+                            System.out.println("Producto no encontrado.");
+                        } else {
+                            System.out.println("\n" + producto);
+                        }
                     } else {
                         System.out.println("Opción no válida.");
                     }

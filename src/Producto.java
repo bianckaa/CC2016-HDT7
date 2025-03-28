@@ -1,4 +1,14 @@
-import java.util.Map;
+/**
+ * Universidad del Valle de Guatemala
+ * Algoritmos y Estructuras de Datos - Seccion 31
+ * Hoja de Trabajo 7
+ * Biancka Raxón 24960
+ * 
+ * Clase: Producto.java
+ * Clase que representa Producto obtenido del archivo CSV. 
+ */
+
+ import java.util.Map;
 
 public class Producto {
     String SKU;

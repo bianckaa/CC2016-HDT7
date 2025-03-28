@@ -1,3 +1,12 @@
+/**
+ * Universidad del Valle de Guatemala
+ * Algoritmos y Estructuras de Datos - Seccion 31
+ * Hoja de Trabajo 7
+ * Biancka Raxón 24960
+ * 
+ * Clase: Main.java
+ * Clase encargada de la ejecución del programa. 
+ */
 import java.io.IOException;
 
 public class Main {

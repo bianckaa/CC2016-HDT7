@@ -1,4 +1,15 @@
-import java.io.BufferedReader;
+/**
+ * Universidad del Valle de Guatemala
+ * Algoritmos y Estructuras de Datos - Seccion 31
+ * Hoja de Trabajo 7
+ * Biancka Raxón 24960
+ * 
+ * Clase: DocumentController.java
+ * Clase importa los datos de los productos alamcenados en un archivo CSV 
+ * a un objeto de tipo Iventario. 
+ */
+
+ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.HashMap;
