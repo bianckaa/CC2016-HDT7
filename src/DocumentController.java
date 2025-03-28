@@ -12,10 +12,10 @@ public class DocumentController {
         br.readLine(); // Saltar encabezado
         
         while ((linea = br.readLine()) != null) {
-            String[] partes = linea.split(",");
-            String SKU = partes[0], nombre = partes[1], descripcion = partes[2];
+            String[] datos = linea.split(",");
+            String SKU = datos[0], nombre = datos[1], descripcion = datos[2];
             Map<String, Integer> tallas = new HashMap<>();
-            for (String talla : partes[3].split("\\|")) {
+            for (String talla : datos[3].split("\\|")) {
                 String[] info = talla.split(":");
                 tallas.put(info[0], Integer.parseInt(info[1]));
             }

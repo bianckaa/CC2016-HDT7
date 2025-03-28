@@ -31,6 +31,6 @@ public class Producto {
 
     @Override
     public String toString(){
-        return "Producto [SKU=" + SKU + ", nombre=" + nombre + ", descripcion=" + descripcion + ", cantidadTalla=" + cantidadTalla + "]";
+        return String.format("Producto:\nSKU: %d\nNombre: %s\nDescripción: %s\nCantidad por Talla: %d", SKU, nombre, descripcion, cantidadTalla);
     }
 }
