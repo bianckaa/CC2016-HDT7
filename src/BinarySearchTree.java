@@ -18,8 +18,7 @@ public class BinarySearchTree <K extends Comparable<K>, V>{
         } else if (cmp > 0) {
             node.right = insertionRecursive(node.right, key, value);
         } else {
-            // Si la clave ya existe, actualizamos el valor
-            node.value = value;
+            node.value = value; // Si la clave ya existe, se actualiza el valor
         }
         return node;
     }    
@@ -41,7 +40,7 @@ public class BinarySearchTree <K extends Comparable<K>, V>{
     private void inOrderTraversalRecursive(Node<K, V> node) {
         if (node != null) {
             inOrderTraversalRecursive(node.left);
-            System.out.println(node.value);
+            System.out.println(node.value + "\n");
             inOrderTraversalRecursive(node.right);
         }
     }

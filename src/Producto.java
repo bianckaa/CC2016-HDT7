@@ -31,6 +31,12 @@ public class Producto {
 
     @Override
     public String toString(){
-        return String.format("Producto:\nSKU: %s\nNombre: %s\nDescripción: %s\nCantidad por Talla: %s", SKU, nombre, descripcion, cantidadTalla.toString());
+        StringBuilder cantidadTallaStr = new StringBuilder();
+        for (Map.Entry<String, Integer> entry : cantidadTalla.entrySet()) {
+            cantidadTallaStr.append("- ").append(entry.getKey()).append(": ").append(entry.getValue()).append("\n");
+        }
+        return String.format("Detalles del Producto          \n" +
+                            "+-------------------------------+\n" +
+                            "SKU: %s\nNombre: %s\nDescripción: %s\nCantidad por Talla:\n%s", SKU, nombre, descripcion, cantidadTallaStr.toString());
     }
 }
