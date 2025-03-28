@@ -5,9 +5,6 @@ public class Main {
         Inventario inventario = new Inventario();
         DocumentController.cargarCSV("inventario_ropa_deportiva_30.csv", inventario);
         
-        System.out.println("Inventario por SKU:");
-        inventario.listarPorSKU();
-
-        System.out.println("\nBuscar por SKU '23': " + inventario.buscarPorSKU("023"));
+        UI.mostrarMenu(inventario);
     }
 }
