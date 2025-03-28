@@ -16,10 +16,10 @@ public class Inventario {
     }
 
     public void listarPorSKU() {
-        bstSKU.inOrder();
+        bstSKU.inOrderTraversal();
     }
 
     public void listarPorNombre() {
-        bstNombre.inOrder();
+        bstNombre.inOrderTraversal();
     }
 }
