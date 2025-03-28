@@ -5,6 +5,13 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class DocumentController {
+    /**
+     * Carga los datos de productos desde un archivo CSV y los agrega al inventario proporcionado.
+     *
+     * @param archivo El nombre o ruta del archivo CSV a cargar.
+     * @param inventario El objeto de tipo Inventario donde se agregarán los productos.
+     * @throws IOException Si ocurre un error al intentar leer el archivo.
+     */
     public static void cargarCSV(String archivo, Inventario inventario) throws IOException {
         BufferedReader br = new BufferedReader(new FileReader(archivo));
         String linea;

@@ -1,6 +1,11 @@
 import java.util.Scanner;
 
 public class UI {
+    /**
+     * Muestra el menú principal de la interfaz de usuario y permite al usuario interactuar con las opciones disponibles.
+     *
+     * @param inventario El objeto de tipo Inventario donde se almacenan los productos.
+     */
     public static void mostrarMenu(Inventario inventario) {
         Scanner scanner = new Scanner(System.in);
         int opcion;
